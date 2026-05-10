@@ -166,12 +166,3 @@ A verbatim copy (`copy_rate ≈ 1.0`) halves the composite regardless of other s
 ## Environment Arguments
 
 This environment takes no user-facing arguments. Dataset, KG, and subject-weight profiles are loaded automatically.
-
----
-
-## Known Limitations
-
-- **Numerical contradictions**: NLI models frequently fail to flag wrong numbers (e.g., "20 m/s²" vs "5 m/s²") because the sentence structure is identical. A dedicated numerical-consistency pass is not yet implemented.
-- **Humanities grounding**: `example_grounding` is STEM-shaped (detects numbers/entities/code) and under-detects entity-free vivid prose — the primary mode of humanities teaching examples.
-- **KG quality**: `concept_coverage` and `order` are only as good as the auto-generated KG. Noisy source text (PDF extraction artifacts) can produce noisy concepts; `_is_valid_concept()` filters the worst cases.
-- **RL suitability**: Validated for offline evaluation. Not yet validated for online RL training — length gaming and adversarial NLI evasion are untested exploit vectors.
