@@ -26,8 +26,6 @@ prime eval run teaching-env \
   --model openai/gpt-4.1-mini \
   --num-examples 20 \
   --rollouts-per-example 3 \
-  --max-tokens 1024 \
-  --temperature 0.7
 ```
 
 ### 3. Run the test suite
