@@ -12,9 +12,7 @@
 ### 1. Install
 
 ```bash
-pip install -e .
-# spaCy model (downloaded automatically on first run, or manually:)
-python -m spacy download en_core_web_sm
+prime env install hujalex/teaching-env
 ```
 
 ### 2. Run an evaluation
