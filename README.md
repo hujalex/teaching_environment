@@ -151,7 +151,7 @@ copy_penalty = max(0, (copy_rate - 0.90) / 0.10)
 composite    = composite × (1 − copy_penalty × 0.50)
 ```
 
-A verbatim copy (`copy_rate ≈ 1.0`) halves the composite regardless of other scores.
+A verbatim copy (`copy_rate ≈ 1.0`) halves the composite regardless of other scores to penalize copying
 
 ---
 
